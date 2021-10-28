@@ -1,10 +1,9 @@
 import express from "express"
 const app=express()
-const port=3000
-
+const port=process.env.PORT || 4000
 app.get("/",function(req,res){
 
     res.send("Hello World")
 })
 
-app.listen(4000)
+app.listen(port)
