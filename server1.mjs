@@ -6,4 +6,9 @@ app.get("/",function(req,res){
     res.send("Hello World")
 })
 
+app.get("profile",function(req,res){
+
+    res.send("Here is my profile")
+})
+
 app.listen(port)
